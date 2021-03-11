@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "title" : "Home",
+        "href" : "index.html"
+    },
+    {
+        "id" : 2,
+        "title" : "Shop",
+        "href" : "shop.html"
+    },
+    {
+        "id" : 3,
+        "title" : "Cart",
+        "href" : "cart.html"
+    },
+    {
+        "id" : 4,
+        "title" : "Checkout",
+        "href" : "checkout.html"
+    }
+]

@@ -1,0 +1,77 @@
+[
+    {
+        "id" : 1,
+        "name" : "Modern Chair",
+        "price" : {
+            "new" : 100,
+            "old" : 120
+        },
+        "stars" : 4,
+        "instock" : false,
+        "img" : {
+            "src" : "img/product-img/product2.jpg",
+            "alt" : "modern-chair"
+        },
+        "brandId" : [1]
+    },
+    {
+        "id" : 2,
+        "name" : "Modern Table",
+        "price" : {
+            "new" : 130,
+            "old" : 200
+        },
+        "stars" : 3,
+        "instock" : true,
+        "img" : {
+            "src" : "img/product-img/product3.jpg",
+            "alt" : "modern-table"
+        },
+        "brandId" : [2]
+    },
+    {
+        "id" : 3,
+        "name" : "Wooden Table",
+        "price" : {
+            "new" : 89,
+            "old" : 100
+        },
+        "stars" : 5,
+        "instock" : true,
+        "img" : {
+            "src" : "img/product-img/product4.jpg",
+            "alt" : "wooden-table"
+        },
+        "brandId" : [1, 3]
+    },
+    {
+        "id" : 4,
+        "name" : "Chair",
+        "price" : {
+            "new" : 69,
+            "old" : 119
+        },
+        "stars" : 4,
+        "instock" : false,
+        "img" : {
+            "src" : "img/product-img/product2.jpg",
+            "alt" : "wooden-chair"
+        },
+        "brandId" : [2, 4]
+    },
+    {
+        "id" : 5,
+        "name" : "Stool",
+        "price" : {
+            "new" : 39,
+            "old" : 79
+        },
+        "stars" : 4,
+        "instock" : true,
+        "img" : {
+            "src" : "img/product-img/product2.jpg",
+            "alt" : "stool"
+        },
+        "brandId" : [3]
+    }
+]

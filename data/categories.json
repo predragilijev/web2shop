@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "name" : "Chairs"
+    },
+    {
+        "id" : 2,
+        "name" : "Beds"
+    },
+    {
+        "id" : 3,
+        "name" : "Accessories"
+    },
+    {
+        "id" : 4,
+        "name" : "Furniture"
+    },
+    {
+        "id" : 5,
+        "name" : "Home Deco"
+    }
+]
