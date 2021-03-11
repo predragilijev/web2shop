@@ -88,7 +88,7 @@ window.onload = () => {
                         <p>$<s>${prod.price.old}</s></p>
                         <a href="product-details.html">
                             <h6>${prod.name}</h6>
-                            <p>${prod.instock}</p>
+                            <p class="avcolor ${getAvColor(prod.instock)}">${prod.instock}</p>
                         </a>
                     </div>
                     <!-- Ratings & Cart -->
@@ -118,15 +118,15 @@ window.onload = () => {
         return htmlStars;
 	}
 
-    // function getAvColor(stock) {
-    //     if (stock == false) {
-    //         // $('.avcolor').addClass('text-danger');
-    //         return "text-danger";
-    //     } else {
-    //         // $('.avcolor').addClass('text-primary');
-    //         return "text-primary";
-    //     }
-    // }
+    function getAvColor(stock) {
+        if (stock == "Not available") {
+            // $('.avcolor').addClass('text-danger');
+            return "text-danger";
+        } else {
+            // $('.avcolor').addClass('text-primary');
+            return "text-primary";
+        }
+    }
 
     function sorting(dataArray){
         let chosen = $('#sorting').val();
