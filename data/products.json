@@ -7,7 +7,7 @@
             "old" : 120
         },
         "stars" : 4,
-        "instock" : false,
+        "instock" : "Not available",
         "img" : {
             "src" : "img/product-img/product2.jpg",
             "alt" : "modern-chair"
@@ -22,7 +22,7 @@
             "old" : 200
         },
         "stars" : 3,
-        "instock" : true,
+        "instock" : "Available",
         "img" : {
             "src" : "img/product-img/product3.jpg",
             "alt" : "modern-table"
@@ -37,7 +37,7 @@
             "old" : 100
         },
         "stars" : 5,
-        "instock" : true,
+        "instock" : "Available",
         "img" : {
             "src" : "img/product-img/product4.jpg",
             "alt" : "wooden-table"
@@ -51,8 +51,8 @@
             "new" : 69,
             "old" : 119
         },
-        "stars" : 4,
-        "instock" : false,
+        "stars" : 2,
+        "instock" : "Not available",
         "img" : {
             "src" : "img/product-img/product2.jpg",
             "alt" : "wooden-chair"
@@ -67,10 +67,25 @@
             "old" : 79
         },
         "stars" : 4,
-        "instock" : true,
+        "instock" : "Available",
         "img" : {
             "src" : "img/product-img/product2.jpg",
             "alt" : "stool"
+        },
+        "brandId" : [3]
+    },
+    {
+        "id" : 6,
+        "name" : "Wooden Stool",
+        "price" : {
+            "new" : 49,
+            "old" : 99
+        },
+        "stars" : 3,
+        "instock" : "Available",
+        "img" : {
+            "src" : "img/product-img/product2.jpg",
+            "alt" : "wooden-stool"
         },
         "brandId" : [3]
     }
