@@ -20,7 +20,7 @@ window.onload = () => {
     function showProdMain(dataArray) {
         let html = '';
 		for (let prodPart of dataArray) {
-			html += `<div class="col-lg-3">
+			html += `<div class="single-products-catagory clearfix">
                         <a href="shop.html">
                             <img src="${prodPart.img}" alt="${prodPart.name}">
                             <div class="hover-content">
