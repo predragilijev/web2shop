@@ -1,4 +1,6 @@
 window.onload = () => {
+// $(document).ready(function(){
+
     function getData(file, callback){
 		$.ajax({
 			url: "data/" + file + ".json",
@@ -18,7 +20,7 @@ window.onload = () => {
     function showProdMain(dataArray) {
         let html = '';
 		for (let prodPart of dataArray) {
-			html += `<div class="single-products-catagory clearfix">
+			html += `<div class="col-lg-3">
                         <a href="shop.html">
                             <img src="${prodPart.img}" alt="${prodPart.name}">
                             <div class="hover-content">

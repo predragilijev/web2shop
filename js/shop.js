@@ -1,4 +1,6 @@
 window.onload = () => {
+// $(document).ready(function(){
+
 	$("#sorting").change(filterOnChange);
 	$("#amado").change(filterOnChange);
 	

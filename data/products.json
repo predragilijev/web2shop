@@ -88,5 +88,35 @@
             "alt" : "wooden-stool"
         },
         "brandId" : [3]
+    },
+    {
+        "id" : 7,
+        "name" : "Couch",
+        "price" : {
+            "new" : 219,
+            "old" : 239
+        },
+        "stars" : 5,
+        "instock" : "Not available",
+        "img" : {
+            "src" : "img/product-img/product4.jpg",
+            "alt" : "wooden-stool"
+        },
+        "brandId" : [4, 5]
+    },
+    {
+        "id" : 8,
+        "name" : "Wooden Stool",
+        "price" : {
+            "new" : 119,
+            "old" : 139
+        },
+        "stars" : 2,
+        "instock" : "Available",
+        "img" : {
+            "src" : "img/product-img/product5.jpg",
+            "alt" : "wooden-stool"
+        },
+        "brandId" : [4]
     }
 ]
