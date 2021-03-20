@@ -27,8 +27,8 @@ function check(data, regExp, errorPlace, errorText) {
         errorPlace.classList.add("text-danger");
         return false;
     } else {
-        errorPlace.innerHTML = "";
         $("#confirmation").html("<p class='alert alert-success text-center'>You have successfully sent a message!</p>");
+        errorPlace.innerHTML = "";
         setItem('nameForm', data);
         return true;
     }
