@@ -19,16 +19,17 @@ window.onload = function() {
 		});
 	}
 
-    getData("categories", showCateg);
+    // getData("categories", showCateg);
 	
-	function showCateg(categArray){
-		let html = "";
-		for (let cat of categArray) {
-			html += `<li><a href="#">${cat.name}</a></li>`;
-		}
-        $("#categHere").html(html);
-		getData("brands", showBrands);
-	}
+	// function showCateg(categArray){
+	// 	let html = "";
+	// 	for (let cat of categArray) {
+	// 		html += `<li><a href="#">${cat.name}</a></li>`;
+	// 	}
+    //     $("#categHere").html(html);
+		
+	// }
+    getData("brands", showBrands);
 	
 	function showBrands(brandArray){
 		let html = "";

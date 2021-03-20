@@ -97,22 +97,31 @@
 
                             <form action="#" method="post">
                                 <div class="row">
+                                    <div class="col-12 mb-3" id="confirmation"></div>
                                     <div class="col-md-6 mb-3">
                                         <input type="text" class="form-control" id="first_name" value="" placeholder="First Name" required>
+                                        <p class="col-12" id="fnameError"></p>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <input type="text" class="form-control" id="last_name" value="" placeholder="Last Name" required>
+                                        <p class="col-12" id="lnameError"></p>
                                     </div>
                                     <div class="col-12 mb-3">
                                         <input type="email" class="form-control" id="email" placeholder="Email" value="">
+                                        <p class="col-12" id="emailError"></p>
                                     </div>
+                                    
                                     <div class="col-12 mb-3">
-                                        <textarea name="comment" class="form-control w-100" id="comment" cols="30" rows="10" placeholder="Leave a message here"></textarea>
+                                        <textarea name="comment" class="form-control w-100" id="message" cols="30" rows="10" placeholder="Leave a message here"></textarea>
+                                        <p class="col-12" id="messageError"></p>
                                     </div>
+                                    
 
                                     <div class="col-12">
                                         <a><input type="button" name="btnSend" id="btnSend" value="Send" class="btn amado-btn w-100"/></a>
                                     </div>
+                                    
+                                    
                                 </div>
                             </form>
                         </div>
@@ -187,6 +196,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/active.js"></script>
 
 
+    <script src="js/contact.js"></script>
     <script src="js/soc.js"></script>
 
 </body>
