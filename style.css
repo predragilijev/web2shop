@@ -45,3 +45,9 @@
     color: #00e600;
     /* text-shadow: 1px 1px 2px black; */
 }
+.fa-star {
+    color: #fbb710 !important;
+}
+.product-price {
+    color: rgb(17, 17, 17) !important;
+}

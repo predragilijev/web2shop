@@ -10,8 +10,8 @@ window.onload = function() {
 			url: "data/" + file + ".json",
 			method: "get",
 			dataType: "json",
-			success: function(response){
-				callback(response);
+			success: function(resp){
+				callback(resp);
 			},
 			error: function(err){
 				console.log(err);
@@ -45,17 +45,23 @@ window.onload = function() {
 	
 	function showProducts(productArray){
         setItem("products", productArray);
-		productArray = brandFiltering(productArray);
-		productArray = availableFilter(productArray);
-		productArray = sorting(productArray);
         $("#btn_next").click(function() {
             chosen = 'nextPage';
+            productArray = availableFilter(productArray);
+            productArray = brandFiltering(productArray);
+            productArray = sorting(productArray);
             pagFunct(productArray, chosen);
         });
         $("#btn_prev").click(function() {
             chosen = 'prevPage';
+            productArray = availableFilter(productArray);
+            productArray = brandFiltering(productArray);
+            productArray = sorting(productArray);
             pagFunct(productArray, chosen);
         });
+        productArray = availableFilter(productArray);
+		productArray = brandFiltering(productArray);
+		productArray = sorting(productArray);
         pagFunct(productArray, "");
 	}
     function getProductStars(starNum){
@@ -70,28 +76,20 @@ window.onload = function() {
         if (stock == "Not available") {
             return "text-danger";
         } else {
-            return "text-primary";
+            return "text-success";
         }
     }
 
     function sorting(dataArray){
         let chosen = $('#sorting').val();
         if (chosen == "ratingAsc") {
-            return dataArray.sort(function(first, second){ 
-                first.stars > second.stars ? 1 : -1;
-            });
+            return dataArray.sort((first, second) => first.stars > second.stars ? 1 : -1);
         } else if (chosen == "ratingDesc") {
-            return dataArray.sort(function(first, second){ 
-                first.stars < second.stars ? 1 : -1;
-            });
+            return dataArray.sort((first, second) => first.stars < second.stars ? 1 : -1);
         } else if (chosen == "priceLH") {
-            return dataArray.sort(function(first, second){ 
-                first.price.new > second.price.new ? 1 : -1;
-            });
+            return dataArray.sort((first, second) => first.price.new > second.price.new ? 1 : -1);
         } else if (chosen == "priceHL") {
-            return dataArray.sort(function(first, second){ 
-                first.price.new < second.price.new ? 1 : -1;
-            });
+            return dataArray.sort((first, second) => first.price.new < second.price.new ? 1 : -1);
         } else return dataArray;
 	}
 
@@ -109,8 +107,9 @@ window.onload = function() {
 
 	function availableFilter(dataArray){
 		var availability = $(".stocks:checked").val();
+        
 		if(availability == "Available"){
-			var smth = dataArray.filter(function(one){ one.instock == "Available"});
+			var smth = dataArray.filter(one => one.instock == "Available");
 			return smth;
 		}
 		return dataArray;
@@ -178,7 +177,7 @@ window.onload = function() {
             var start = (page-1) * records_per_page;
             var end = (page * records_per_page);
             var prodPage = prodArray.slice(start, end);
-            console.log(prodPage);
+            // console.log(prodPage);
 
             for(let oneProd of prodPage){
                 pgItem += `
@@ -187,11 +186,9 @@ window.onload = function() {
                 <div class="single-product-wrapper">
                     <!-- Product Image -->
                     <div class="product-img">
-                        <a href="product-details.html">
-                            <img src="${oneProd.img.src}" alt="${oneProd.img.alt}">
-                            <!-- Hover Thumb -->
-                            <img class="hover-img" src="img/product-img/product2.jpg" alt="">
-                        </a>
+                        <img src="${oneProd.img.src}" alt="${oneProd.img.alt}">
+                        <!-- Hover Thumb -->
+                        <img class="hover-img" src="img/product-img/product2.jpg" alt="">
                     </div>
     
                     <!-- Product Description -->
@@ -201,10 +198,8 @@ window.onload = function() {
                             <div class="line"></div>
                             <p class="product-price">$${oneProd.price.new}</p>
                             <p>$<s>${oneProd.price.old}</s></p>
-                            <a href="product-details.html">
-                                <h6>${oneProd.name}</h6>
+                                <h5>${oneProd.name}</h5>
                                 <p class="avcolor ${getAvColor(oneProd.instock)}">${oneProd.instock}</p>
-                            </a>
                         </div>
                         <!-- Ratings & Cart -->
                         <div class="ratings-cart text-right">
@@ -323,9 +318,6 @@ function addToCart(prodID, prodPrice, inStock){
 function setItem(name, data){
     localStorage.setItem(name, JSON.stringify(data));
 }
-// function setItemLocalStorage(itemKey, itemValue){
-//     localStorage.setItem(itemKey, JSON.stringify(itemValue))
-// }
 
 function getItem(name){
     return JSON.parse(localStorage.getItem(name));
@@ -346,16 +338,9 @@ function showCartNum(){
 
 function modalShow() {
     var modal = $('#myModal');
-    // var btn = $('.btnCarts');
     var span = $('.close');
     
     modal.fadeIn(300).css('display', 'block');
-    //Modal cart
-    // $(btn).on("click", function(){
-    // // btn.click(function() {
-    //     console.log("Ulaz modal dalje");
-    //     modal.css('display', 'block');
-    // });
     span.click(function() {
         modal.css('display', 'none');
     });
