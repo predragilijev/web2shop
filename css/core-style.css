@@ -1120,7 +1120,7 @@ img {
     opacity: 1;
     visibility: visible; }
 
-.pagination {
+/* .pagination {
   position: relative;
   z-index: 1; }
   .pagination .page-item .page-link {
@@ -1148,7 +1148,7 @@ img {
   .pagination .page-item:last-child .page-link {
     margin-left: 0;
     border-top-right-radius: 0;
-    border-bottom-right-radius: 0; }
+    border-bottom-right-radius: 0; } */
 
 /* :: 8.0 Footer Area CSS */
 .footer_area {

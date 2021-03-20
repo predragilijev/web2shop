@@ -118,5 +118,140 @@
             "alt" : "wooden-stool"
         },
         "brandId" : [4]
+    },
+    {
+        "id" : 9,
+        "name" : "Wooden Stool",
+        "price" : {
+            "new" : 119,
+            "old" : 139
+        },
+        "stars" : 2,
+        "instock" : "Available",
+        "img" : {
+            "src" : "img/product-img/product5.jpg",
+            "alt" : "wooden-stool"
+        },
+        "brandId" : [4]
+    },
+    {
+        "id" : 10,
+        "name" : "Wooden Stool",
+        "price" : {
+            "new" : 119,
+            "old" : 139
+        },
+        "stars" : 2,
+        "instock" : "Available",
+        "img" : {
+            "src" : "img/product-img/product5.jpg",
+            "alt" : "wooden-stool"
+        },
+        "brandId" : [4]
+    },
+    {
+        "id" : 11,
+        "name" : "Wooden Stool",
+        "price" : {
+            "new" : 119,
+            "old" : 139
+        },
+        "stars" : 2,
+        "instock" : "Available",
+        "img" : {
+            "src" : "img/product-img/product5.jpg",
+            "alt" : "wooden-stool"
+        },
+        "brandId" : [4]
+    },
+    {
+        "id" : 12,
+        "name" : "Wooden Stool",
+        "price" : {
+            "new" : 119,
+            "old" : 139
+        },
+        "stars" : 2,
+        "instock" : "Available",
+        "img" : {
+            "src" : "img/product-img/product5.jpg",
+            "alt" : "wooden-stool"
+        },
+        "brandId" : [4]
+    },
+    {
+        "id" : 13,
+        "name" : "Wooden Stool",
+        "price" : {
+            "new" : 119,
+            "old" : 139
+        },
+        "stars" : 2,
+        "instock" : "Available",
+        "img" : {
+            "src" : "img/product-img/product5.jpg",
+            "alt" : "wooden-stool"
+        },
+        "brandId" : [4]
+    },
+    {
+        "id" : 14,
+        "name" : "Wooden Stool",
+        "price" : {
+            "new" : 119,
+            "old" : 139
+        },
+        "stars" : 2,
+        "instock" : "Available",
+        "img" : {
+            "src" : "img/product-img/product5.jpg",
+            "alt" : "wooden-stool"
+        },
+        "brandId" : [4]
+    },
+    {
+        "id" : 15,
+        "name" : "Wooden Stool",
+        "price" : {
+            "new" : 119,
+            "old" : 139
+        },
+        "stars" : 2,
+        "instock" : "Available",
+        "img" : {
+            "src" : "img/product-img/product5.jpg",
+            "alt" : "wooden-stool"
+        },
+        "brandId" : [4]
+    },
+    {
+        "id" : 16,
+        "name" : "Wooden Stool",
+        "price" : {
+            "new" : 119,
+            "old" : 139
+        },
+        "stars" : 2,
+        "instock" : "Available",
+        "img" : {
+            "src" : "img/product-img/product5.jpg",
+            "alt" : "wooden-stool"
+        },
+        "brandId" : [4]
+    },
+    {
+        "id" : 17,
+        "name" : "Wooden Stool",
+        "price" : {
+            "new" : 119,
+            "old" : 139
+        },
+        "stars" : 2,
+        "instock" : "Available",
+        "img" : {
+            "src" : "img/product-img/product5.jpg",
+            "alt" : "wooden-stool"
+        },
+        "brandId" : [4]
     }
 ]
